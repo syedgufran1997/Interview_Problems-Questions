@@ -82,13 +82,14 @@
 //   .catch((err) => console.log("error", err));
 
 // Pure funtions: Always returns same o/p for same i/p
-// function PureFuntion(b) {
+// function PureFuntion() {
 //   let sum = 0;
 //   sum++;
 //   return console.log(sum);
 // }
-// PureFuntion(12);
-// PureFuntion(12);
+// PureFuntion();
+// PureFuntion();
+
 // PureFuntion(12);
 // PureFuntion(1, 2);
 
@@ -102,7 +103,7 @@
 //   },
 // };
 
-// Shallow Copy: Where original Object values are also changed
+// Shallow Copy: Where original Object values are also changed (Spread operator)
 // let ShallowCopy = person;
 // ShallowCopy.name = "Doe";
 // console.log("person", person);
@@ -139,6 +140,7 @@
 // const array = ["apple", "bat", "cat", "dog", "egg"];
 // const [array1, array2, ...rest] = array;
 // console.log(rest);
+// console.log(array);
 
 // destructuring both objects and arrays at same time
 // const groceryList = [

@@ -4,7 +4,6 @@
 // Math , Search and Sorting
 
 //
-//
 // Exmaple using sum
 // Big O notation using the time complexity for sum numbers
 
