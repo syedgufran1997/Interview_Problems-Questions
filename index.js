@@ -13,6 +13,8 @@
 // console.log(c);
 
 // Closure
+
+// function C is lexically inside function a
 // function a() {
 //   let a = 100;
 //   function c() {
@@ -45,7 +47,7 @@
 // counter1();
 // const counter1 = Counter();
 
-// First Class Funcitons
+// First Class Functions
 // var b = function (param1) {
 //   return param1();
 // };

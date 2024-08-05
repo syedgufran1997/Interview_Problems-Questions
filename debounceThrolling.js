@@ -12,6 +12,7 @@
 //     timer = setTimeout(() => {
 //       fn.apply(context, args);
 //     }, delay);
+
 //   };
 // };
 // const betterFunction = debounceMethod(apiCall, 300);
