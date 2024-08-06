@@ -1,4 +1,4 @@
-// Using Chat GPT for this solution
+// Using Chat GPT for this solution Day 1
 
 // Initialization
 // Hash map: numToIndex = {} (empty at the start)
