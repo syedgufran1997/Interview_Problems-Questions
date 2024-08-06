@@ -1,4 +1,3 @@
-//
 // callstack queue
 // var x = 7;
 // function getName() {
@@ -8,7 +7,6 @@
 // console.log(x);
 // console.log(getName);
 
-//
 // Function Execution in JS
 // var x = 1;
 // a();

@@ -13,7 +13,6 @@
 // console.log(c);
 
 // Closure
-
 // function C is lexically inside function a
 // function a() {
 //   let a = 100;
