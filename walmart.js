@@ -37,4 +37,4 @@ const graphLists = [
   },
 ];
 
-console.log("list", graphLists);
+// console.log("list", graphLists);

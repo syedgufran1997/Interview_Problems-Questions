@@ -23,7 +23,10 @@
 // Return indices: [numToIndex[2], 2] which is [1, 2]
 // At this point, we have found the solution, so we return the indices [1, 2].
 
-function twoSum(nums, target) {
+// const nums = [3, 2, 4];
+// const target = 6;
+
+function twoSumHashMap(nums, target) {
   // Initialize an empty hash map (object in JavaScript)
   const numToIndex = {};
 
@@ -48,8 +51,5 @@ function twoSum(nums, target) {
   return [];
 }
 
-// Example usage
-const nums = [3, 2, 4];
-const target = 6;
-// console.log(twoSum(nums, target));
+// console.log(twoSumHashMap(nums, target));
 // Output: [1, 2]
