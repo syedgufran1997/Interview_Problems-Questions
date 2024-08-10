@@ -18,3 +18,9 @@ const twoSum = function (nums, target) {
 };
 
 // console.log(twoSum(nums, target));
+
+// 24000 yearly
+// 1200 monthly
+// dubizle
+// Naukri Gulf
+// CA 8000 per month
