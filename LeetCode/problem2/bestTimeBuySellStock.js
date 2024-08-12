@@ -7,15 +7,13 @@ let prices = [1, 2, 3, 4, 5]; //Output = 4
 // let prices = [7, 6, 4, 3, 1]; // Output = 0
 
 var maxProfit = function (prices) {
-  let totalProfit = 0;
-
-  for (let i = 1; i < prices.length; i++) {
-    if (prices[i] > prices[i - 1]) {
-      totalProfit += prices[i] - prices[i - 1];
-    }
-  }
-
-  return totalProfit;
+  // let totalProfit = 0;
+  // for (let i = 1; i < prices.length; i++) {
+  //   if (prices[i] > prices[i - 1]) {
+  //     totalProfit += prices[i] - prices[i - 1];
+  //   }
+  // }
+  // return totalProfit;
 };
 f;
 console.log(maxProfit(prices));
