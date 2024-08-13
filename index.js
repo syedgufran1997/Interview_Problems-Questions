@@ -252,14 +252,14 @@
 // Print sum of 2 numbers is target number in array
 // function TargetSum(number, target) {
 //   let targetArray = [];
-//   for (let i = 0; i <= number.length; i++) {
-//     for (let j = 0; j <= number.length; j++) {
+//   for (let i = 0; i < number.length; i++) {
+//     for (let j = i + 1; j < number.length; j++) {
 //       if (target === number[i] + number[j]) {
-//         targetArray.push([number[i], number[j]]);
+//         sumArray.push([number[i], number[j]]);
 //       }
 //     }
 //   }
-//   return console.log(targetArray);
+//   return targetArray;
 // }
 // TargetSum(number, 9);
 
