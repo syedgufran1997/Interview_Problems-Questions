@@ -19,7 +19,9 @@ function maxSubArray(nums) {
 
 console.log(maxSubArray(nums));
 
-// It initializes maxSum and currentSum to the first element.
-// It iterates through the rest of the elements, updating currentSum to be the maximum of the current element or the sum of the current element and the previous currentSum.
-// It updates maxSum to be the maximum of the current maxSum and the current currentSum.
-// Finally, it returns maxSum, which contains the largest sum of any subarray in the input array.
+// Steps using Kadane's algorithm
+// 1. It initializes maxSum and currentSum to the first element.
+// 2. It iterates through the rest of the elements, updating currentSum to be the maximum of the
+// current element or the sum of the current element and the previous currentSum.
+// 3. It updates maxSum to be the maximum of the current maxSum and the current currentSum.
+// 4. Finally, it returns maxSum, which contains the largest sum of any subarray in the input array.
