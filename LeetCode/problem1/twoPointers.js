@@ -12,11 +12,14 @@
 // If the sum is less than the target, move the left pointer to the right.
 // If the sum is greater than the target, move the right pointer to the left.
 
+// let nums = [3, 2, 4];
+// let target = 6;
+
 function twoPointersSum(nums, target) {
   let numWithIndex = nums.map((num, index) => ({ num, index }));
   numWithIndex.sort((a, b) => a.num - b.num);
 
-  // actual 2 pointers methods start
+  // actual 2 pointers method start
   let left = 0;
   let right = numWithIndex.length - 1;
 
@@ -32,6 +35,4 @@ function twoPointersSum(nums, target) {
   }
   return [];
 }
-// let nums = [3, 2, 4];
-// let target = 6;
 // console.log(twoPointersSum(nums, target));
