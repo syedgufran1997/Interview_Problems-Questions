@@ -6,8 +6,10 @@
 
 // let nums = [4,5,6,7,0,1,2], target = 3  // Output: -1
 // let nums = [1], target = 0  // Output: -1
-let nums = [4, 5, 6, 7, 0, 1, 2];
-target = 0; // Output: 4
+// let nums = [4, 5, 6, 7, 0, 1, 2]; target = 0; // Output: 4
+// let nums = [1, 3]; target = 3; //Output = 1
+let nums = [3, 1];
+target = 1; //Output = 1
 
 const searchInSortedArray = (nums, target) => {
   let left = 0;
@@ -18,7 +20,7 @@ const searchInSortedArray = (nums, target) => {
     if (nums[mid] === target) return mid;
 
     // check which side the array is sorted
-    if (nums[left] < nums[mid]) {
+    if (nums[left] <= nums[mid]) {
       // if left side sorted
       if (target >= nums[left] && target < nums[mid]) {
         right = mid - 1;
@@ -40,3 +42,21 @@ const searchInSortedArray = (nums, target) => {
 };
 
 console.log(searchInSortedArray(nums, target));
+
+// Explanation;
+// 1. Initialization:
+// left and right pointers are initialized to the start and end of the array, respectively.
+
+// 2. Binary Search Loop:
+// Calculate mid as the average of left and right.
+// Check if the element at mid is the target. If it is, return the mid index.
+// Determine whether the left side (nums[left] to nums[mid]) or the right side (nums[mid] to nums[right]) is sorted.
+// If the left side is sorted:
+// Check if the target is within the range of the left side. If it is, search the left half by updating right.
+// If not, search the right half by updating left.
+// If the right side is sorted:
+// Check if the target is within the range of the right side. If it is, search the right half by updating left.
+// If not, search the left half by updating right.
+
+// 3. Termination:
+// If the loop exits without finding the target, return -1.
