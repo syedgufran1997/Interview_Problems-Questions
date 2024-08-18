@@ -4,12 +4,39 @@
 // Given the array nums after the possible rotation and an integer target, return the index of target if it is in nums, or -1 if it is not in nums.
 // You must write an algorithm with O(log n) runtime complexity.
 
-// let nums = [4,5,6,7,0,1,2], target = 0  // Output: 4
 // let nums = [4,5,6,7,0,1,2], target = 3  // Output: -1
 // let nums = [1], target = 0  // Output: -1
+let nums = [4, 5, 6, 7, 0, 1, 2];
+target = 0; // Output: 4
 
-const searchSortedArray = (nums) => {
-  console.log(nums);
+const searchInSortedArray = (nums, target) => {
+  let left = 0;
+  let right = nums.length - 1;
+
+  while (left <= right) {
+    let mid = Math.floor((left + right) / 2);
+    if (nums[mid] === target) return mid;
+
+    // check which side the array is sorted
+    if (nums[left] < nums[mid]) {
+      // if left side sorted
+      if (target >= nums[left] && target < nums[mid]) {
+        right = mid - 1;
+      } else {
+        left = mid + 1;
+      }
+    } else {
+      // right sorted
+      // if not left side then it will be right side for sure
+      if (target > nums[mid] && target <= nums[right]) {
+        left = mid + 1;
+      } else {
+        right = mid - 1;
+      }
+    }
+  }
+
+  return -1;
 };
 
-console.log(searchSortedArray(nums));
+console.log(searchInSortedArray(nums, target));
