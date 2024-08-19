@@ -20,3 +20,11 @@ function threeSum(nums) {
 }
 
 console.log(threeSum(nums));
+
+// Explanation
+// Sorting: The array nums is first sorted to make it easier to avoid duplicates and use the two-pointer technique.
+// Outer Loop: The for loop iterates through each element of the array. The element at index i is considered the first element of the triplet.
+// Two-Pointer Technique: The left pointer starts right after i, and the right pointer starts at the end of the array. By moving these pointers inward, we can find pairs that sum up to -nums[i], forming a valid triplet that sums to zero.
+// Avoiding Duplicates: The condition if (i > 0 && nums[i] === nums[i - 1]) continue; ensures that we skip over any duplicate values for the first element of the triplet. Similarly, we skip duplicates for the second and third elements by adjusting the left and right pointers after finding a valid triplet.
+// Result Collection: Valid triplets are stored in the result array, which is returned at the end.
+// This approach ensures that we find all unique triplets in O(n^2) time, where n is the length of the array.
