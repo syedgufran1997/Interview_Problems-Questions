@@ -167,14 +167,31 @@
 // console.log(flatten(arr));
 
 // Polyfill for Call,Apply, Bind method --------
-// let name = {
-//   firstName: "Syed",
-//   lastName: "Gufran",
-// }
-// let PrintFullName = function(hometown, state){
-//   return console.log( this.firstName + " " + this.lastName + " from " + hometown + " " + state)
-// }
-// PrintFullName.call(name, "bangalore", "karnataka")
-// PrintFullName.apply(name, ["bangalore", "karnataka"])
-// let printName = PrintFullName.bind(name,"bangalore" , "Kar")
-// printName()
+// let name2 = {
+//   firstName: "John",
+//   lastName: "Doe",
+// };
+// let printFullName = function (homeTown, state, country) {
+//   console.log(
+//     `${this.firstName} ${this.lastName} from ${homeTown}, ${state}, ${country}`
+//   );
+// };
+
+// Normal call apply and bind method
+// printFullName.call(name2, 'bangalore', 'karnataka')
+// printFullName.apply(name2, ['banglore', 'Karnataka' ])
+// printFullName.bind();
+// const printMyName = printFullName.bind(name2, 'bangalore', 'karnataka')
+// printMyName();
+
+// polyfill for bind method
+// Function.prototype.mybind = function (...args) {
+//   let obj = this;
+//   let params = args.slice(1);
+//   return function (...args2) {
+//     obj.apply(args[0], [...params, ...args2]);
+//   };
+// };
+
+// const printMyName = printFullName.mybind(name2, "bangalore", "karnataka");
+// printMyName("india");

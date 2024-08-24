@@ -73,8 +73,7 @@
 // console.log(Factorial(5)); // output 120 - [1,2,3,4,5] it will multiply with result
 
 // 3. Prime Number
-// A prime number is a natural number greater than 1 that is not product of
-// two smaller natural numbers
+// A prime number is a natural number greater than 1 that is not product of two smaller natural numbers
 
 // function isPrime(n) {
 //   if (n < 2) {
@@ -96,8 +95,7 @@
 
 // Recursion
 // Recursion is when a function calls itself.
-// Recursion is problem solving technique where the solution depends on
-// solution to smaller instances of same problem
+// Recursion is problem solving technique where the solution depends on solution to smaller instances of same problem
 
 // Recursive Fibonacci Sequence
 // It is a sequence in which each number is a sum of two procedings ones
@@ -110,10 +108,10 @@
 //   return recursiveFibonacci(n - 1) + recursiveFibonacci(n - 2);
 // }
 
-// console.log(recursiveFibonacci(0));
-// console.log(recursiveFibonacci(1));
-// console.log(recursiveFibonacci(4));
-// console.log(recursiveFibonacci(6));
+// console.log(recursiveFibonacci(0)); // 0
+// console.log(recursiveFibonacci(1)); // 1
+// console.log(recursiveFibonacci(4)); // 3
+// console.log(recursiveFibonacci(6)); // 8 [ 0,1,2,3,4,5]
 
 // Recursive Factorial of a number  formula n! = n * (n-1)
 // function recursiveFactorial(n) {
@@ -132,7 +130,6 @@
 // 1. Linear Search Algorithm
 // Problem Given an array of n elements and a target element t, find the
 // index of t in the array, return -1 if the target element is not found
-
 // function LinearFunciton(arr, target) {
 //   for (let i = 0; i < arr.length; i++) {
 //     if (arr[i] === target) {
@@ -144,6 +141,11 @@
 // console.log(LinearFunciton([-5, 2, 10, 4, 6], 10)); // output 2
 
 // 2. Binary Search Algorithm
+// Key Concepts:
+// Precondition: The array (or list) must be sorted in ascending (or descending) order.
+// Divide and Conquer: The algorithm narrows the search range by half in each step, making it very efficient compared to linear search,
+//  which checks each element sequentially.
+
 // Problem Given an sorted array of 'n' elements and a target element 't', find
 // th index of 't' in the array, return -1 if target element not found
 
@@ -211,6 +213,34 @@
 //   return arr;
 // }
 // console.log(bubbleSort(arr));
+
+// Corrected and Optimized Bubble Sort Implementation:
+// const arr = [1, 2, 4, 7, 9, 3, 6, 8];
+// function bubbleSort(arr) {
+//   let n = arr.length;
+//   let swapped;
+
+//   for (let i = 0; i < n; i++) {  // Outer loop, runs n times
+//     swapped = false;
+
+//     for (let j = 0; j < n - i - 1; j++) {  // Inner loop, runs n-i-1 times
+//       if (arr[j] > arr[j + 1]) {  // Compare adjacent elements
+//         let temp = arr[j];
+//         arr[j] = arr[j + 1];
+//         arr[j + 1] = temp;  // Swap if they are in the wrong order
+//         swapped = true;  // Mark that we did a swap
+//       }
+//     }
+
+//     // If no elements were swapped in the inner loop, the array is sorted
+//     if (!swapped) {
+//       break;
+//     }
+//   }
+
+//   return arr;  // Return the sorted array
+// }
+// console.log(bubbleSort(arr));  // Output: [1, 2, 3, 4, 6, 7, 8, 9]
 
 // 2. Insertion Sort Algorithm - It will compare sorted array with next unnsorted elements/array and swap them
 // const arr = [8, 20, -2, 4, -6];
