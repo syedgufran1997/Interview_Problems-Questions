@@ -10,10 +10,6 @@
 // 1, 2, 3, 4, 5, 6, 7, 8, 9;
 // 10;
 
-// setTimeout(() => {
-//   console.log(i);
-// }, 3000);
-
 // let x = "5";
 // let y = 2;
 // console.log(x + y);
