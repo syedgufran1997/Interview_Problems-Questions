@@ -1,4 +1,5 @@
 // scope chain / block scope and shadowing
+// Block is also know as Compound statement
 // var a = 100;
 // {
 //   var a = 10;
@@ -284,3 +285,20 @@
 // dynamicComponents in react
 
 // React, Redux, Javascript -
+// var b = 10;
+
+// function x() {
+//   b = 20;
+//   console.log(b);
+// }
+
+// x();
+// console.log(b);
+
+// var x = 10;
+// function foo() {
+//   x = 5;
+//   console.log(x); // 5
+// }
+// foo(); // undefined
+// console.log(x); //5

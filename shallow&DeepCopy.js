@@ -1,11 +1,11 @@
-// Shallow Copy: Where original Object values are also changed
+// Shallow Copy: Where original Object values are also changed -----
 // let ShallowCopy = person;
 // ShallowCopy.name = "Doe";
 
 // console.log("person", person);
 // console.log("ShallowCopy", ShallowCopy);
 
-// Deep Copy: where original object values are not Changed
+// Deep Copy: where original object values are not Changed -----
 // method 1
 // let DeepCopy = { ...person };
 // DeepCopy.name = "Spred Operators";
@@ -21,7 +21,7 @@
 // console.log("person", person);
 // console.log("DeepCopy", deepCopy);
 
-// Destructuring method in array and object using map
+// Destructuring method in array and object using map -----
 // users = [
 //     ["John", "Doe"],
 //     ["John1", "Doe1"],
