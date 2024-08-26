@@ -10,3 +10,11 @@
 //   }, 0);
 
 // console.log(res);
+
+// React Advanced level questions ---------
+// What are Controlled and Uncontrolled Components in react
+// If State is Asyn/sync in react
+// What is React Portal?
+// What is React Fiber?
+// what is Shadow DOM?
+// what are forward refs?
