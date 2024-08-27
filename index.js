@@ -292,25 +292,11 @@
 // }
 // console.log(findMax(radius));
 
-// intuit -
-// dynamicFormsInReact
-// dynamicComponents in react
-
-// React, Redux, Javascript -
-// var b = 10;
-
-// function x() {
-//   b = 20;
-//   console.log(b);
-// }
-
-// x();
-// console.log(b);
-
-// var x = 10;
-// function foo() {
-//   x = 5;
-//   console.log(x); // 5
-// }
-// foo(); // undefined
-// console.log(x); //5
+// Find max value in array using reduce method
+// const output = radius.reduce(function (max, curr) {
+//   if (curr > max) {
+//     max = curr;
+//   }
+//   return max;
+// }, 0);
+// console.log(output);
