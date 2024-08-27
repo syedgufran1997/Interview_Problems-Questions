@@ -122,6 +122,14 @@
 // }, {});
 // console.log(result);
 
+// find the same as above using reduce method
+// const result = users.reduce((acc, curr) => {
+//   if (curr.age < 30) {
+//     return curr.firstname;
+//   }
+//   return acc;
+// }, []);
+
 // Implement this unique fn which increment the value after each call
 // no global variable no args
 // unique()-> 1
