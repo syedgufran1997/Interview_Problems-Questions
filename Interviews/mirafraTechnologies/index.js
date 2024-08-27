@@ -12,6 +12,7 @@
 // console.log(res);
 
 // React Advanced level questions ---------
+// Differentiate betweeen useCallback and useMemo hooks in react
 // What are Controlled and Uncontrolled Components in react
 // If State is Asyn/sync in react
 // What is React Portal?
