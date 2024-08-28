@@ -15,7 +15,7 @@ let array = [1, 2, 3, 4, 5, 6, 7];
 
 //
 // Slice ------------------------
-// A JS method which creates a shallow copy of an array without modifying the original array
+// A JS method which creates a copy of an array without modifying the original array
 // Does not mutate the original array.
 // Used to extract a portion of an array into a new array.
 // Returns a new array containing the sliced elements.

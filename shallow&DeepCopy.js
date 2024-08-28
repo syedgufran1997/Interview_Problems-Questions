@@ -1,25 +1,25 @@
-// Shallow Copy: Where original Object values are also changed -----
+// const person = {
+//   name: "John",
+//   age: 21,
+//   address: {
+//     city: "New York",
+//     state: "NY",
+//   },
+// };
+
+// Shallow Copy: Where original Object values are changed -----
 // let ShallowCopy = person;
 // ShallowCopy.name = "Doe";
 
-// console.log("person", person);
-// console.log("ShallowCopy", ShallowCopy);
+// console.log("person", person); // Doe - changed
+// console.log("ShallowCopy", ShallowCopy); - changed
 
 // Deep Copy: where original object values are not Changed -----
-// method 1
-// let DeepCopy = { ...person };
-// DeepCopy.name = "Spred Operators";
-
-// method 2
-// let deepCopy = Object.assign({}, person);
-// deepCopy.name = "Assign Method";
-
-// method 3
 // let deepCopy = JSON.parse(JSON.stringify(person));
 // deepCopy.name = "Parse method";
 
-// console.log("person", person);
-// console.log("DeepCopy", deepCopy);
+// console.log("person", person); // John - unchanged
+// console.log("DeepCopy", deepCopy); // unchanged
 
 // Destructuring method in array and object using map -----
 // users = [
