@@ -76,7 +76,7 @@
 // console.log(ExtractName(tree));
 
 // output print names only in an array - Recursion
-// output [  {firstName: 'Jhon'}, {firstName: 'Lilly'},
+// expected output [  {firstName: 'Jhon'}, {firstName: 'Lilly'},
 //    {firstName: 'Simon'},firstName: 'Helen'}  ]
 // let namesArray = [];
 // function recurrArray(list) {
