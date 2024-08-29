@@ -1,3 +1,6 @@
+// OOPS and its types
+// type and interface
+
 // const array = [
 //   { severity: 10 },
 //   { severity: 100 },
