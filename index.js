@@ -69,20 +69,6 @@
 // }
 // y(x);
 
-// PROMISES IN JAVASCRIPT
-// function promise(n) {
-//   return new Promise((resolve, reject) => {
-//     if (n % 2 === 0) {
-//       resolve(`${n} is even number`);
-//     } else if (n % 2 !== 0) {
-//       reject(`${n} is odd number`);
-//     }
-//   });
-// }
-// promise(3)
-//   .then((res) => console.log("result", res))
-//   .catch((err) => console.log("error", err));
-
 // Pure funtions: Always returns same o/p for same i/p
 // function PureFuntion() {
 //   let sum = 0;
