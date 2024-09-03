@@ -1,5 +1,7 @@
+// Role: react js developer 29/08/2024 2pm
+
 // OOPS and its types
-// type and interface
+// Diff between type and interface
 
 // const array = [
 //   { severity: 10 },

@@ -1,3 +1,5 @@
+// Role: React js Developer 26/08/2024
+
 // Print the sum of all digits
 // let arr = [1234, 5678, "apple12", "Bat234k", 1278, 1289]; // output: 86
 

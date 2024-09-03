@@ -1,3 +1,6 @@
+// Role: React JS developer
+// Schedule: 24/08/2024 Saturday 2pm
+
 // for (var i = 0; i < 10; i++) {
 // console.log(i);
 //   setTimeout(() => {
