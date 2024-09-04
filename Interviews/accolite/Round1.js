@@ -9,14 +9,10 @@
 // }
 // expected answer : 10
 
-// my answer
-// 1, 2, 3, 4, 5, 6, 7, 8, 9;
-// 10;
-
 // let x = "5";
 // let y = 2;
-// console.log(x + y);
-// console.log(x - y);
+// console.log(x + y); // 52
+// console.log(x - y); // 3
 
 // var x = 10;
 // function foo() {
@@ -25,6 +21,7 @@
 // }
 // foo();
 // console.log(x);
+// expected answer : 5, 5
 
 // console.log("Start");
 // setTimeout(() => {
@@ -32,3 +29,4 @@
 // });
 // Promise.resolve().then(() => console.log("Promise"));
 // console.log("End");
+// expected answer : Start, End, Promise, Timeout
