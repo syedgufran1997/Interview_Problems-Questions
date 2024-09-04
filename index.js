@@ -256,26 +256,38 @@
 // console.log(output);
 
 // check if the str1 exists in the string if yes print true else false
-let data = [
-  { fileName: "MoreInfo_syedhu_012132132.pdf" },
-  { fileName: "Denial__012132132.pdf" },
-  { fileName: "MoreInfo_AlenjandraCastilo_012132132.pdf" },
-  { fileName: "Denial_Alenjandra_012132132.pdf" },
-  { fileName: "_syedhu_012132132.pdf" },
-];
+// let data = [
+//   { fileName: "MoreInfo_syedhu_012132132.pdf" },
+//   { fileName: "Denial__012132132.pdf" },
+//   { fileName: "MoreInfo_AlenjandraCastilo_012132132.pdf" },
+//   { fileName: "Denial_Alenjandra_012132132.pdf" },
+//   { fileName: "_syedhu_012132132.pdf" },
+// ];
 
-let str1 = "More Info";
-let str2 = "Denial";
+// let str1 = "More Info";
+// let str2 = "Denial";
 
 // using for loop
-function checkStringExist(data, str1) {
-  let string1 = str1.split(" ").join("").toLowerCase();
-  for (let i = 0; i < data.length; i++) {
-    if (data[i].fileName.includes(string1)) {
-      return true;
-    }
-    return false;
-  }
-}
+// function checkStringExist(data, str1) {
+//   let string1 = str1.split(" ").join("").toLowerCase();
+//   for (let i = 0; i < data.length; i++) {
+//     if (data[i].fileName.includes(string1)) {
+//       return true;
+//     }
+//     return false;
+//   }
+// }
+// console.log(checkStringExist(data, str1));
 
-console.log(checkStringExist(data, str1));
+// Ussing Array helper methods
+// function result(data) {
+//     // let e = "More Info";
+//     let e = "Deneil";
+//     let value = e.split(" ").join("").toLowerCase();
+//   const result = data
+//      .map((item) => item.fileName.split("_")[0].toLowerCase())
+//      .some((item) => item === value);
+//     // .find((item) => (item === value ? (isValid = true) : (isValid = false)));
+//   return result;
+// }
+// console.log(result(data));
