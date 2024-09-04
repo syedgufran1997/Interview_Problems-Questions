@@ -30,10 +30,3 @@
 // Task 1
 // Task 3
 // Task 2
-
-// Async and await in javascript
-// A new of writing asynchronous code in javascript,
-
-// async: Marks a function as asynchronous and ensures it returns a Promise.
-// await: Pauses the execution of the function until a Promise is resolved or rejected,
-// allowing for easier-to-read asynchronous code.
