@@ -33,7 +33,9 @@ export default function TodoPractice() {
   const updateTodo = (id) => {
     if (state && state.length > 0 && todoList.length && todoList) {
       const updateList = todoList?.map((todo) =>
-        todo.id === id ? { ...todo, name: state } : todo
+        todo.id === id && todo.status !== "Fullfilled"
+          ? { ...todo, name: state }
+          : todo
       );
       setTodoList(updateList);
       setState("");
@@ -74,11 +76,13 @@ export default function TodoPractice() {
             todoList.map((item, index) => (
               <div
                 key={index}
-                className={`${
-                  item?.status === "Fullfilled" ? "line-through" : ""
-                }  flex items-center justify-between m-3 border border-blue-400 py-2 px-2 max-w-96 w-1/6 `}
+                className={`flex items-center justify-between m-3 border border-blue-400 py-2 px-2 max-w-96 w-1/6 rounded`}
               >
-                <div className="w-1/2 text-start ">
+                <div
+                  className={`${
+                    item?.status === "Fullfilled" ? "line-through" : ""
+                  }  w-1/2 text-start `}
+                >
                   <span>{item.id} </span>
                   <span>{item?.name}</span>
                 </div>
