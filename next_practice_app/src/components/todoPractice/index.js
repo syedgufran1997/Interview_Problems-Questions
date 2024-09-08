@@ -25,7 +25,7 @@ export default function TodoPractice() {
   const handleDelete = (id) => {
     // const deleteTodo = todoList?.filter((item, index) => item.id !== id);
     const deleteTodo = todoList?.filter(
-      (item, index) => todoList.indexOf(item) !== id
+      (item) => todoList.indexOf(item) !== id
     );
     setTodoList(deleteTodo);
   };
