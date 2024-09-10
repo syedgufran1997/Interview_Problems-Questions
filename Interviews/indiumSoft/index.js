@@ -5,6 +5,9 @@
 // 2. What is Currying in javascript?
 // 3. What is Coercion and it's types in javascript?
 // 4. what is PassByValue and PassByReference?
+// 5. What is strict mode in javascript?
+// 6. what happens when we use Strict mode in Javascript?
+// 7. What is Array.Prototype in javascript?
 
 // Typesript Questions
 // 1. What is Typescript
