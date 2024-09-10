@@ -1,0 +1,12 @@
+Summary of ReactJS Features:
+Component-Based Architecture: Reusable components for better maintainability.
+Virtual DOM: Efficient rendering and updates.
+One-Way Data Binding: Predictable state management.
+Declarative UI: Easier to reason about the UI state.
+JSX: HTML-like syntax inside JavaScript.
+React Hooks: State and lifecycle methods in functional components.
+Lifecycle Methods: Control component behavior at different stages.
+Context API: Global state management without prop drilling.
+SSR and SEO Optimization: Faster page loads and better SEO.
+Code-Splitting: Lazy loading for performance optimization.
+React Developer Tools: Easy debugging and inspection.
