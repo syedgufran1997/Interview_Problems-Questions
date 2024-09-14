@@ -235,6 +235,7 @@
 // console.log(repeatedNumbers);
 
 // Find the max value in the array
+// const arr = [2,1,4,6,3,5,6,8,7]
 // const findMax = (arr) => {
 //     let max = 0;
 //     for (let i = 0; i < arr.length; i++){

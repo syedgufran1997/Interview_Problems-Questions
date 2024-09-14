@@ -1,6 +1,7 @@
 "use client";
 // Custom Hooks In React
-// Custom hooks in React are a powerfull way to extract and reuse logic between components.
+// Powerfull way to extract and reuse logic between components.
+// A custom hook in React is a JavaScript function that allows you to reuse stateful logic across components.
 
 import { useState, useEffect } from "react";
 

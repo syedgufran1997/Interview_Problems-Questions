@@ -1,10 +1,13 @@
+// Genetrators are special Javascript functions that implement iterator protocol,
+// This funtions can stop midway and then continue from where it stopped.
+// The Generator is a function which returns an object on which you can call next()
+
 function* generatorFunction() {
   console.log("This will execute first");
   yield "Hello ,";
 
   console.log("i will print after pause");
   yield "World !";
-
   // after this it will print undefined as there is no value
 }
 
