@@ -1,0 +1,36 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.mainCardWrap {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.cardWrap {
+  width: 25%;
+  height: 100%;
+  height: 300px;
+  border: 1px solid grey;
+  padding: 5px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: scroll;
+}
+.imageWrap {
+  height: 50%;
+}
+.imageWrap img {
+  object-fit: contain;
+  object-position: center;
+}
+.cardContent {
+  height: 50%;
+}
+.cardContent p {
+  margin: 5px;
+}
