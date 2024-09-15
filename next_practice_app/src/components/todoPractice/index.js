@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import ButtonComponent from "./Button";
 
 export default function TodoPractice() {
   const [state, setState] = useState();
@@ -62,12 +63,7 @@ export default function TodoPractice() {
           placeholder="Add Todo"
           className="p-2 outline-none border border-blue-500 rounded-md  "
         />
-        <button
-          className="bg-blue-200 shadow-md rounded-md ms-2 p-2 "
-          onClick={handleClick}
-        >
-          Add Todo
-        </button>
+        <ButtonComponent lable="Add Todo" onClick={handleClick} />
       </div>
 
       <div className="mt-7 flex justify-center items-center flex-wrap ">
