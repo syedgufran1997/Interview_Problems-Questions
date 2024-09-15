@@ -1,23 +1,35 @@
 "use client";
-import React from "react";
+import React, { useContext } from "react";
+import MyContext from "./context";
 
-const CardComponent = ({ data, key }) => {
+const CardComponent = () => {
+  const { data, error } = useContext(MyContext);
+
+  if (error) {
+    return <p>Error: {error.message}</p>;
+  }
+
   return (
-    <div className="cardWrap" key={key}>
-      <div className="imageWrap">
-        <img
-          src={data?.image}
-          alt={data?.titile}
-          height="150px"
-          width="100px"
-        />
-      </div>
+    <div className="mainCardWrap">
+      {data?.data &&
+        data.data.map((item, index) => (
+          <div className="cardWrap" key={index}>
+            <div className="imageWrap">
+              <img
+                src={item?.image}
+                alt={item?.titile}
+                height="150px"
+                width="100px"
+              />
+            </div>
 
-      <div className="cardContent">
-        <p>Title: {data?.title}</p>
-        <p>Rate: {data?.rating?.rate}</p>
-        <p>count: {data?.rating?.count}</p>
-      </div>
+            <div className="cardContent">
+              <p>Title: {item?.title}</p>
+              <p>Rate: {item?.rating?.rate}</p>
+              <p>count: {item?.rating?.count}</p>
+            </div>
+          </div>
+        ))}
     </div>
   );
 };

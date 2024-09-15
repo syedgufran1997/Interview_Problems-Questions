@@ -1,7 +1,7 @@
-import DashBoard from "@/components/customHook/dashboard";
+// import DashBoard from "@/components/customHook/dashboard";
 import ProdcutsApi from "@/components/HarmannAssessment";
-import TodoPractice from "@/components/todoPractice";
-import ComponentTranitionHook from "@/components/useTransition";
+// import TodoPractice from "@/components/todoPractice";
+// import ComponentTranitionHook from "@/components/useTransition";
 
 export default function Home() {
   return (
@@ -9,7 +9,6 @@ export default function Home() {
       {/* <TodoPractice /> */}
       {/* <DashBoard /> */}
       {/* <ComponentTranitionHook /> */}
-
       <ProdcutsApi />
     </div>
   );
