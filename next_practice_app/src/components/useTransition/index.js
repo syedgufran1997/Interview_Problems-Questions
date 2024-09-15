@@ -6,7 +6,7 @@ const ComponentTranitionHook = () => {
   const [filteredItems, setFilteredItems] = useState([]);
   const [isPending, startTransition] = useTransition();
 
-  const items = Array.from({ length: 20000 }, (_, i) => `Item ${i + 1}`);
+  const items = Array.from({ length: 10000 }, (_, i) => `Item ${i + 1}`);
 
   const handleSearch = (e) => {
     const value = e.target.value;
