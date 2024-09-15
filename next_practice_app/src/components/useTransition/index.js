@@ -14,7 +14,7 @@ const ComponentTranitionHook = () => {
 
     startTransition(() => {
       const result = items?.filter((item) =>
-        item.toLowerCase().includes(value.toLowerCase())
+        item?.toLowerCase()?.includes(value.toLowerCase())
       );
       setFilteredItems(result);
     });
@@ -29,9 +29,7 @@ const ComponentTranitionHook = () => {
         placeholder="Search items"
         className="border p-3"
       />
-
       {isPending ? <p>Loading...</p> : null}
-
       <ul>
         {filteredItems?.map((item, index) => (
           <li key={index}>{item}</li>

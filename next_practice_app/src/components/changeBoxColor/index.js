@@ -29,7 +29,6 @@ export default function ChangeBoxColor() {
   return (
     <div className="App">
       <h1>Change Box Color</h1>
-
       <div className="mainBoxWrap">
         {color && color.length
           ? color?.map((item, index) => (
