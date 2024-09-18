@@ -1,6 +1,6 @@
-// Role: SSE-Frontend deveoper 29/08/2024
+// Role: SSE-Frontend developer 29/08/2024
 
-// Dynamic forms in Ract js -------------
+// Dynamic forms in React js -------------
 
 // Question
 // Create a React compenent with input, select fields
