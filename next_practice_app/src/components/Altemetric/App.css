@@ -1,0 +1,28 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.mainWrap {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 1rem;
+  margin: 20px;
+}
+
+.cardWrap {
+  border: 1px solid grey;
+  padding: 10px;
+}
+
+.inputWrap {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+}
+.inputComp {
+  padding: 5px;
+  border: 1px solid grey;
+  outline: none;
+}

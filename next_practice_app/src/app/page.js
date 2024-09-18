@@ -9,7 +9,8 @@ export default function Home() {
       {/* <TodoPractice /> */}
       {/* <DashBoard /> */}
       {/* <ComponentTranitionHook /> */}
-      <ProdcutsApi />
+      {/* <ProdcutsApi /> */}
+      <AltemetricAssessment />
     </div>
   );
 }
