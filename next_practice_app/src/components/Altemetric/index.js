@@ -1,12 +1,13 @@
+"use client";
+import { useEffect, useState, useTransition } from "react";
+import "./App.css";
+
 // Altemetric L2 Round
 
 // Create a web application like flipkart using the below product api
 // https://dummyjson.com/products
 
-import { useEffect, useState, useTransition } from "react";
-import "./App.css";
-
-function AltemetricAssessment() {
+export default function Altemetric() {
   const [data, setData] = useState([]);
   const [state, setState] = useState("");
   const [isLoading, startTransition] = useTransition();
@@ -75,5 +76,3 @@ function AltemetricAssessment() {
     </div>
   );
 }
-
-export default AltemetricAssessment;

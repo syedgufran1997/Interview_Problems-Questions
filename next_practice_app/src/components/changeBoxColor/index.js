@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import BoxComponent from "./boxComponent";
 import "./styles.css";
 
