@@ -22,13 +22,16 @@ export default function Altemetric() {
 
   const handleInputChange = (e) => {
     e.preventDefault();
-    const title = e.target.value;
+    const title = e.target.value.toLowerCase();
     setState(title);
 
+    if (!title) {
+      fetchApi();
+    }
     startTransition(() => {
       if (title) {
         const filteredData = data.filter((item) => {
-          return item?.title.toLowerCase().includes(title.toLowerCase());
+          return item?.title.toLowerCase().includes(title);
         });
         setData(filteredData);
       }
