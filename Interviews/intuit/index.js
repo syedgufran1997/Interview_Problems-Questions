@@ -7,14 +7,32 @@
 
 // Example:
 
-// const arr = [1, 2, 3, 2, 4, 5, 2, 6, 3, 7, 8, 6];
-// // console.log(findDuplicates(arr)); // should return [2, 3, 6]
+const arr = [1, 2, 3, 2, 4, 5, 6, 3, 7, 8, 6];
+// console.log(findDuplicates(arr)); // should return [2, 3, 6]
 
-// function duplicat(arr) {
-//   let result = [];
-//   let output = [];
+function Duplicates() {
+  let element = {};
+  let result = [];
 
-//   return output;
-// }
+  //    const dupCheck = arr.filter((item,index) => arr.indexOf(item) !== index ) // [2,3,6]
 
-// console.log(duplicat(arr));
+  // const result = arr.reduce((acc, curr) => ((acc[curr] = acc[curr] + 1 || 1), acc), {})
+  // { 1: 1, 2: 2, 3: 2, 4: 1, 5: 1, 6: 2, 7: 1, 8: 1 }
+
+  arr.forEach((num) => {
+    element[num] = (element[num] || 0) + 1;
+  });
+  // { 1: 1, 2: 2, 3: 2, 4: 1, 5: 1, 6: 2, 7: 1, 8: 1 }
+
+  for (let key in element) {
+    if (element[key] > 1) {
+      result.push(Number(key));
+    }
+  }
+  // const result = Object.entries(arr).map(([key, value]) => {return {key: (key), value }})
+  // console.log(result);
+
+  return result;
+}
+
+console.log(Duplicates());
