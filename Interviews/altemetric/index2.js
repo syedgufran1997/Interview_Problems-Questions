@@ -1,18 +1,22 @@
-// output: aaabbcddeeef;
 let input = "a2b1cd1e2f";
+// output: aaabbcddeeef;
 
-// Please provide the solution for this approach
-function decodeString(input) {
-  //   let output = "";
-  //   let spiltArray = input.split("");
-  //   for (let i = 0; i < spiltArray; i++) {
-  //     if (!isNaN(i)) {
-  //       return i;
-  //       decodeString(input);
-  //     }
-  //   }
-  // return spiltArray;
-  // join
+function expandString() {
+  let output = "";
+
+  for (i = 0; i < input.length; i++) {
+    let char = input[i];
+    let nextChar = parseInt(input[i + 1], 10);
+
+    if (!isNaN(nextChar)) {
+      output += char.repeat(nextChar);
+      i++;
+    } else {
+      output += char;
+    }
+  }
+
+  return output;
 }
 
-console.log(decodeString(input));
+console.log(expandString());
