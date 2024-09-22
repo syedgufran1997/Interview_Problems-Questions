@@ -11,7 +11,7 @@ export default function TodoPractice() {
     setState(e.target.value);
   };
 
-  const handleClick = () => {
+  const handleAddTodo = () => {
     if (state && state.length > 0) {
       setTodoList([
         ...todoList,
@@ -67,7 +67,7 @@ export default function TodoPractice() {
           placeholder="Add Todo"
           className="p-2 outline-none border border-blue-500 rounded-md  "
         />
-        <ButtonComponent lable="Add Todo" onClick={handleClick} />
+        <ButtonComponent label="Add Todo" onClick={handleAddTodo} />
       </div>
 
       <div className="mt-7 flex justify-center items-center flex-wrap ">
