@@ -23,10 +23,10 @@ export default function TodoPractice() {
     }
   };
 
-  const handleDelete = (id) => {
+  const handleDelete = (index) => {
     // const deleteTodo = todoList?.filter((item, index) => item.id !== id);
     const deleteTodo = todoList?.filter(
-      (item) => todoList.indexOf(item) !== id
+      (item) => todoList.indexOf(item) !== index
     );
     setTodoList(deleteTodo);
   };
@@ -50,6 +50,10 @@ export default function TodoPractice() {
       todo.id === id ? { ...todo, status: "Fullfilled" } : todo
     );
     setTodoList(updateList);
+
+    // setTodoList((prevState) => prevState.map(item =>
+    //   item.id === id ? {...item, status: 'Fullfilled' } : item
+    //  )  )
   };
 
   return (
