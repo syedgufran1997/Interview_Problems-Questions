@@ -280,7 +280,7 @@
 // }
 // console.log(checkStringExist(data, str1));
 
-// Ussing Array helper methods
+// Using Array helper methods
 // function result(data) {
 //     // let e = "More Info";
 //     let e = "Deneil";
