@@ -15,7 +15,6 @@ function expandString() {
       output += char;
     }
   }
-
   return output;
 }
 
