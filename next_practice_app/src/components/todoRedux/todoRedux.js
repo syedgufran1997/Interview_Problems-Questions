@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { addTodo, deleteTodo, updateTodo } from "./RtkQuery/todoSlice";
+import { addTodo, deleteTodo, updateTodo } from "./redux/todoSlice";
 
 export default function TodoRedux() {
   const [state, setState] = useState("");
