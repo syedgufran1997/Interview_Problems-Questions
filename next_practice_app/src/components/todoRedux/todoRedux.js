@@ -17,7 +17,9 @@ export default function TodoRedux() {
   };
 
   const handleAddTodo = () => {
-    dispatch(addTodo(state));
+    if (state && state.length) {
+      dispatch(addTodo(state));
+    }
     // setTodoList([
     //   ...todoList,
     //   {
@@ -44,9 +46,9 @@ export default function TodoRedux() {
     //     item?.id === id
     //       ? {
     //           ...item,
-    // text: "line-through",
-    // color: "red",
-    // status: "completed",
+    //           text: "line-through",
+    //           color: "red",
+    //           status: "completed",
     //         }
     //       : item
     //   )
