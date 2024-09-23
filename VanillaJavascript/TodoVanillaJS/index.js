@@ -6,7 +6,15 @@ document.addEventListener("DOMContentLoaded", () => {
   function createTaskList(task) {
     const li = document.createElement("li");
     li.textContent = task;
-    // const removeButton = document.createElement("button");
+    const removeButton = document.createElement("button");
+    removeButton.textContent = "Del";
+    removeButton.className = "removeButton";
+
+    removeButton.onclick = () => {
+      li.remove();
+    };
+
+    li.append(removeButton);
     return li;
   }
 
