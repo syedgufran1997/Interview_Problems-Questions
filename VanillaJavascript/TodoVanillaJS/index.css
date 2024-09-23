@@ -1,0 +1,28 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+  padding: 2rem;
+}
+
+.todoForm {
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 2em;
+}
+.todoForm input,
+.todoForm button {
+  padding: 5px;
+  margin: 5px;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0px 0px 2px 2px lightgray;
+  border: none;
+  /* border: 10x solid lightgray; */
+}
+.todoListWrap {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}

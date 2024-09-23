@@ -31,7 +31,6 @@ const updateTodo = (id, name) => {
 // console.log(TodoList);
 
 // Accolite 1st round
-
 /* const number = 2
 const result = new Promise((resolve, reject) => 
 if(number % 2 === 0){
