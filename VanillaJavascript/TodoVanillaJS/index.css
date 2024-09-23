@@ -22,7 +22,14 @@ body {
   border: none;
   /* border: 10x solid lightgray; */
 }
-.todoListWrap {
+.todoListWrap ul {
   display: grid;
   grid-template-columns: auto auto auto;
+  gap: 1em 2em;
+  padding-top: 1em;
+}
+.todoListWrap #todoList li {
+  list-style: none;
+  border: 1px solid grey;
+  padding: 5px;
 }

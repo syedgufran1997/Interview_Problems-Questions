@@ -3,13 +3,21 @@ document.addEventListener("DOMContentLoaded", () => {
   const addTodoButton = document.getElementById("addTodoButton");
   const todoList = document.getElementById("todoList");
 
-  function createTaskList() {}
+  function createTaskList(task) {
+    const li = document.createElement("li");
+    li.textContent = task;
+    // const removeButton = document.createElement("button");
+    return li;
+  }
 
   addTodoButton.addEventListener("click", () => {
     const task = inputText.value.trim();
 
     if (task) {
-      console.log("input text =>", task);
+      const taskElement = createTaskList(task);
+      todoList.append(taskElement);
+
+      inputText.value = "";
     }
   });
 
