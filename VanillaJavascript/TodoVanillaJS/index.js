@@ -42,17 +42,3 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
-
-// Fetch APi method using Vanilla JS
-//   let ApiData = [];
-//   function fetchApi() {
-//     const url = "https://dummyjson.com/products";
-//     fetch(url)
-//       .then((res) => res.json())
-//       .then((res) => (ApiData = res.products))
-//       .catch((error) => {
-//         throw new Error(error.message);
-//       });
-//   }
-//   fetchApi();
-//   console.log(ApiData);
