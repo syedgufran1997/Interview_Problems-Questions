@@ -7,7 +7,6 @@ function expandString() {
   for (i = 0; i < input.length; i++) {
     let char = input[i];
     let nextChar = parseInt(input[i + 1], 10);
-
     if (!isNaN(nextChar)) {
       output += char.repeat(nextChar);
       i++;
