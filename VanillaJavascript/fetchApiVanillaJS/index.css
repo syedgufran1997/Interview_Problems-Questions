@@ -1,0 +1,21 @@
+.productList {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 1em;
+}
+
+.productCard {
+  border: 1px solid lightgray;
+  padding: 5px;
+}
+.productImage {
+  height: 100px;
+  width: 100px;
+}
+.productCard h3 {
+  margin: 0;
+}
+.productCard p {
+  margin: 0;
+  font-size: small;
+}
