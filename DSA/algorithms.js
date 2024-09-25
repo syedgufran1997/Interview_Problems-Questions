@@ -15,7 +15,7 @@
 //   return sum; // runs 1 time
 // }
 
-// similarly to reduce the time complexity for sum
+// Similarly to reduce the time complexity for sum
 // function summation(n) {
 //   return (n * (n + 1)) / 2;
 // }
@@ -42,7 +42,7 @@
 
 // console.log(Fibonacci(2)); // [0,1]
 // console.log(Fibonacci(3)); // [0,1,1]
-// console.log(Fibonacci(7)); // [0,1,1,2,3,5,8]
+// console.log(Fibonacci(7)); // [0,1,1,3,5,8]
 
 // alternate method of fibonnaci series
 // function Fibonacci(n) {
@@ -56,7 +56,7 @@
 // }
 // console.log(Fibonacci(2)); // [0,1]
 // console.log(Fibonacci(3)); // [0,1,1]
-// console.log(Fibonacci(7)); // [0,1,1,2,3,5,8]
+// console.log(Fibonacci(7)); // [0,1,1,3,5,8]
 
 // 2. Factorial of a number
 // factorail of a non-negative integer n, denoted n!,
@@ -123,10 +123,7 @@
 // console.log(recursiveFactorial(3)); // output  6  - [1,2,3] it will multiply with result
 // console.log(recursiveFactorial(5)); // output 120 - [1,2,3,4,5] it will multiply with result
 
-//
-//
 // SEARCH ALOGORITHMS   - IMPORTANT
-
 // 1. Linear Search Algorithm
 // Problem Given an array of n elements and a target element t, find the
 // index of t in the array, return -1 if the target element is not found

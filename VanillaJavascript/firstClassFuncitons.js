@@ -12,15 +12,15 @@
 // };
 // b();
 
-// Anonymous Function
-// function () {
-// }
-
 // Named Function Expression
 // var test = function app() {
 //   console.log("Expression");
 // };
 // b();
+
+// Anonymous Function
+// function () {
+// }
 
 // Differences between parameters and arguments
 // var test = function app(param1, param2) {

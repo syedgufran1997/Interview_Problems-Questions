@@ -24,16 +24,6 @@
 // }
 // a();
 
-// function app() {
-//   let count = 0;
-//   return function () {
-//     return ++count;
-//   };
-// }
-
-// console.log(app()());
-// console.log(app());
-
 // function Counter() {
 //   var count = 0;
 //   return function incrementCounter() {

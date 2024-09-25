@@ -10,12 +10,10 @@ function* generatorFunction() {
   yield "World !";
   // after this it will print undefined as there is no value
 }
-
 const generatorObject = generatorFunction();
-
-// console.log(generatorObject.next().value);
-// console.log(generatorObject.next().value);
-// console.log(generatorObject.next().value);
+console.log(generatorObject.next().value);
+console.log(generatorObject.next().value);
+console.log(generatorObject.next().value);
 
 // Best example for Generator Functions usinf Infinite Data Streams
 // Please console each one and check the values for better understanding

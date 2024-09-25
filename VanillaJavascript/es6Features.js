@@ -64,7 +64,7 @@
 //   }
 // }
 // let details = new Person("syed", 10);
-// details();
+// details;
 
 // 8. Modules -----
 // ES6 introduced native support for modules, alowing you to split code into smaller, reusable pieces.
