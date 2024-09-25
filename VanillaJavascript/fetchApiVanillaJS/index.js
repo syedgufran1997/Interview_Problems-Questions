@@ -3,9 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     try {
       const response = await fetch("https://dummyjson.com/products");
       const data = await response.json();
-      if (data) {
-        displayApiData(data);
-      }
+      displayApiData(data);
     } catch (error) {
       console.log("Error fetching the products", error);
     }
