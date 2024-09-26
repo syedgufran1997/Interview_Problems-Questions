@@ -22,7 +22,7 @@
 // console.log("DeepCopy", deepCopy); // unchanged
 
 // Destructuring method in array and object using map -----
-// users = [S
+// users = [
 //     ["John", "Doe"],
 //     ["John1", "Doe1"],
 //     ["John2", "Doe2"],

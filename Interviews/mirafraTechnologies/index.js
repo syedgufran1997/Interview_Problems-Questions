@@ -16,7 +16,7 @@
 // React Advanced level questions ---------
 // Differentiate betweeen useCallback and useMemo hooks in react
 // What are Controlled and Uncontrolled Components in react
-// If State is Asyn/sync in react
+// If State is Asyncronous/synchronous in react (Asynchronous)
 // What is React Portal?
 // What is React Fiber?
 // what is Shadow DOM?
