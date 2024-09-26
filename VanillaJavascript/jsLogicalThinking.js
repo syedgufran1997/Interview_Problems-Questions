@@ -1,5 +1,5 @@
 // const a = 12;
-// console.log(a ** 12);
+// console.log(a ** 12);  //8916100448256 12 is multiplied 12 times
 
 // function test(){
 //     console.log(test.abc)
@@ -8,6 +8,10 @@
 // test.abc = 400;
 // test.abc = 600;
 // console.log(test());  // undefined
+
+// output for test
+// undefined
+// 600
 
 // console.log({} == {}); // false
 // console.log({} === {});  // false

@@ -1,3 +1,5 @@
+// Polyfills - A piece of code that provides modern funcitonality to older browsers that do that natively support it
+
 // POLYFILL FOR ARRAY METHODS - forEach, map, filter, find,
 // Polyfill for forEach loop ---------
 // const arr = [1, 2, 3, 4, 5];

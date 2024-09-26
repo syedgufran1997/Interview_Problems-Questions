@@ -33,7 +33,7 @@
 //     state: "NY",
 //   },
 // };
-// const { name, age, address } = person;
+// const { name, age, address:{city, state} } = person;
 
 // Array Destructuring
 // const array = ["apple", "bat", "cat", "dog", "egg"];
