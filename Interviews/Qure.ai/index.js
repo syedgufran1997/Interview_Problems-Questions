@@ -21,10 +21,29 @@ console.log(result()) */
 // function prefixString(words) {
 //   let prefixValue = {};
 //   let result = "";
-
 //   for (let char of words) {
 //     prefixValue[char] = (prefixValue[char] || 0) + 1;
 //   }
 // }
-
 // console.log(prefixString(words));
+
+const words = ["flower", "flow", "flask", "flown"];
+result = "flow";
+
+const longetCommonPrefix = (words) => {
+  words.sort((a, b) => a.length - b.length);
+  console.log(words);
+
+  const first = words[0];
+  const last = words[words.length - 1];
+
+  let i = 0;
+
+  while (i < first.length && first[i] === last[i]) {
+    i++;
+  }
+
+  console.log(i);
+
+  return first.slice(0, i);
+};
