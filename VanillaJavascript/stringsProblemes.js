@@ -1,3 +1,4 @@
+// Problem 1
 // function fibonacciN(n){
 //     let array = [0 , 1];
 //     for(let i = 2; i <= n; i++){
@@ -9,6 +10,7 @@
 // }
 // console.log(fibonacciN(4))
 
+// Problem 2
 // function factorialN(n){
 //     let num = 1;
 //     for(let i = 2; i <= n;i++){
@@ -18,12 +20,23 @@
 // }
 // console.log(factorialN(4));
 
-// function recursiveFibonacci(n) {
-//   if (n < 2) { return n }
-//   return recursiveFibonacci(n - 1) + recursiveFibonacci(n - 2);
+// problem 3
+// function recursiveFibonacci(n, arr=[0,1]){
+//     if(arr.length >= n){ return arr }
+//    const nextFB = arr[arr.length - 1] + arr[arr.length - 2]
+//    arr.push(nextFB)
+//    return recursiveFibonacci(n, arr);
 // }
-// console.log(recursiveFibonacci(4));
+// console.log(recursiveFibonacci(8));
 
+// problem 4
+// function recursiveFactorial(n){
+//     if(n === 0){ return 1 }
+//     return n *= recursiveFactorial(n - 1);
+// }
+// console.log(recursiveFactorial(4));
+
+// problem 5
 // const words = ["flower", "flow", "flask", "flown"];
 // // result = "flow";
 // function App(words){
@@ -39,6 +52,7 @@
 // }
 // console.log(App(words))
 
+// problem 6
 // const str1 = "abac";
 // const str2 = "acba";
 // function compareStrings(str1, str2){
@@ -53,3 +67,58 @@
 //     return true;
 // }
 // console.log(compareStrings(str1, str2))
+
+// problem 7
+// let input = "hello javascript";
+// output = { l: 2, a: 2 };
+// function compareCharacters(input){
+//   let char = {};
+//   let result = {};
+//   for (let key of input) {
+//     char[key] = (char[key] || 0) + 1;
+//   }
+//   for(let key in char){
+//     if(char[key] >= 2){
+//         result[key] = char[key]
+//     }
+//   }
+//   return result;
+// }
+// console.log(compareCharacters(input));
+
+// problem 8 - Expand string letters to number of time present after letter
+// let input = "a2b1cd1e2f";
+// // output: aaabbcddeeef;
+
+// function expandString(input) {
+//   let outputString = "";
+
+//   for (let i = 0; i < input.length; i++) {
+//     let char = input[i];
+//     let nextChar = parseInt(input[i + 1]);
+
+//     if (!isNaN(nextChar)) {
+//       outputString += char.repeat(nextChar);
+//       i++;
+//     } else {
+//       outputString += char;
+//     }
+//   }
+
+//   return outputString;
+// }
+// console.log(expandString(input));
+
+// Problem 9
+// Print the sum of all digits
+// let arr = [1234, 5678, "apple12", "Bat234k", 1278, 1289]; // output: 86
+
+// const res = arr
+//   .join("")
+//   .split("")
+//   .reduce((sum, e) => {
+//     if (!isNaN(e)) sum += +e;
+//     return sum;
+//   }, 0);
+
+// console.log(res);

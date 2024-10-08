@@ -2,7 +2,7 @@
 import { useEffect, useState, useTransition } from "react";
 import "./App.css";
 
-// Altemetric L2 Round
+// Altemetric L2 Round intuit
 
 // Create a web application like flipkart using the below product api
 // https://dummyjson.com/products
