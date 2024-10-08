@@ -16,17 +16,6 @@
 /* console.log(result())
 console.log(result()) */
 
-// const words = ["flower", "flow", "flask", "flown"];
-// result = "flow"
-// function prefixString(words) {
-//   let prefixValue = {};
-//   let result = "";
-//   for (let char of words) {
-//     prefixValue[char] = (prefixValue[char] || 0) + 1;
-//   }
-// }
-// console.log(prefixString(words));
-
 const words = ["flower", "flow", "flask", "flown"];
 result = "flow";
 
@@ -42,8 +31,6 @@ const longetCommonPrefix = (words) => {
   while (i < first.length && first[i] === last[i]) {
     i++;
   }
-
-  console.log(i);
 
   return first.slice(0, i);
 };
