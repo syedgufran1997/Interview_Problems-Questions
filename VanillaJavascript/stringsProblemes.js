@@ -122,3 +122,7 @@
 //   }, 0);
 
 // console.log(res);
+
+// Problem 10
+// const anagrams = ["eat", "tea", "tan", "ate", "nat", "bat"];
+// [["eat", "tea", "ate"], ["tan", "nat"], ["bat"]]
