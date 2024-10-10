@@ -4,14 +4,11 @@
 // }).then(result=> console.log(result));
 // console.log(3);
 
-// 3 , 1, 2 by Syed Gufran
+// 1, 3, 2 is the Asnwer
 
 // ----------------------------
-// var x=5;   function foo(){     console.lo... by Abhishek Bhardwaj
-// Abhishek Bhardwaj
-// 15:41
-// var x=5;
 
+// var x=5;
 // function foo(){
 //     console.log(x);// output
 //     console.log(y);//output
@@ -19,7 +16,11 @@
 //     let y=2;
 // }
 // foo();
-// x = 5, Y = undefined by Syed Gufran
+
+// The Answer is
+// x = undefined,
+// Y = Cannot access y before initialization
 
 // ----------------------------
+
 // diff btw React.Memo and useMemo
