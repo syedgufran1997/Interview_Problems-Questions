@@ -20,7 +20,6 @@ export default function App() {
     let key = 1;
     Math.random(0, 4);
     // console.log("random",  ));
-
     // setState();
   }, []);
 
