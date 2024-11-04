@@ -11,3 +11,30 @@
  * k = 2
  * Output => 19
  */
+
+// use sliding window method for the above
+
+let array = [2, 3, 4, 10, 9, 5, 1];
+let k = 2;
+
+function maxSum(arr, k) {
+  if (k <= 0) {
+    return null;
+  }
+
+  let maxSum = 0;
+  for (let i = 0; i <= k; i++) {
+    maxSum += arr[i];
+  }
+
+  let currentSum = maxSum;
+
+  for (i = k; i < array.length; i++) {
+    currentSum += arr[i] - arr[i - k];
+    console.log(currentSum);
+    maxSum = Math.max(maxSum, currentSum);
+  }
+
+  return maxSum;
+}
+console.log(maxSum(array, k));

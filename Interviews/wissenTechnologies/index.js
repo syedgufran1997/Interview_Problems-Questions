@@ -1,5 +1,7 @@
 // Wissen technologies pvt ltd 15-Oct-2024 6PM
+
 // Answer the questions in CRISP and CLEAR way in one sentence
+
 // 1. Difference between CSR and SSR
 // 2. Difference between Apollo Client and Redux
 // 3. What and How javascript Event loop works
