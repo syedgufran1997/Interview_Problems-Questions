@@ -1,4 +1,4 @@
-input = [
+let input = [
   [1, 1, 2, 5, 8],
   [4, 5],
   [3, 6, 9, 1, 7],
@@ -8,11 +8,18 @@ input = [
 function result(input) {
   let output = [];
 
-  for (let i = 0; i < input.length; i++) {
-    let a = input[i];
-    if (Array.isArray(a)) {
-      let value = a[0];
-      output.push(value);
+  let maxLength = Math.max(...input.map((item) => item.length));
+
+  for (let i = 0; i < maxLength; i++) {
+    // let a = input[i];
+    // if (Array.isArray(a)) {
+    //   let value = a[0];
+    //   output.push(value);
+    // }
+    for (let j = 0; j < input.length; j++) {
+      if (input[j][i] !== undefined) {
+        output.push(input[j][i]);
+      }
     }
   }
 
