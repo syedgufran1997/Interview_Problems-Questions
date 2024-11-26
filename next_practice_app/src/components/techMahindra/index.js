@@ -4,4 +4,4 @@
 
 // Create a react app which has to 2pages home and contract page.
 // default homepage should have table with name and age
-// Note: show only age > 6
+// Note: show only age > 6, use React router dom to swith between 2 pages
