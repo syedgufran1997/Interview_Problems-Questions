@@ -1,4 +1,3 @@
-"use client";
 import useFetch from "./useFetchCustom";
 
 const DashBoard = () => {

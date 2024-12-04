@@ -1,4 +1,3 @@
-"use client";
 // Custom Hooks In React
 // Powerfull way to extract and reuse logic between components.
 // A custom hook in React is a JavaScript function that allows you to reuse stateful logic across components.

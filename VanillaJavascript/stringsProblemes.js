@@ -16,7 +16,7 @@
 //     for(let i = 2; i <= n;i++){
 //         num = num * i
 //     }
-//     return num;
+//     return num;f
 // }
 // console.log(factorialN(4));
 

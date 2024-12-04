@@ -1,4 +1,3 @@
-"use client";
 // import "./styles.css";
 // import axios from "axios";
 // import { useEffect, useState } from "react";
