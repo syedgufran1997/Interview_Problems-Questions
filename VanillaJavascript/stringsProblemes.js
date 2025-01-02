@@ -55,6 +55,7 @@
 // problem 6
 // const str1 = "abac";
 // const str2 = "acba";
+// Expected output = true if all str2 letters are in str1 || else false
 // function compareStrings(str1, str2){
 //     const string2 = str2.split('');
 //     for(let char of str1){
@@ -126,3 +127,31 @@
 // Problem 10
 // const anagrams = ["eat", "tea", "tan", "ate", "nat", "bat"];
 // [["eat", "tea", "ate"], ["tan", "nat"], ["bat"]]
+
+// Problem 11
+// let string = "hello world";
+// expected output = {l: 3}
+
+// function reverseString() {
+//   let character = {};
+
+//   for (let char of string) {
+//     if (char !== " ") {
+//       character[char] = (character[char] | 0) + 1;
+//     }
+//   }
+//   console.log(character);
+
+//   let maxValue = "";
+//   let maxCount = 0;
+
+//   for (let key in character) {
+//     if (character[key] > maxCount) {
+//       maxValue = key;
+//       maxCount = character[key];
+//     }
+//   }
+
+//   return { [maxValue]: maxCount };
+// }
+// console.log(reverseString());
