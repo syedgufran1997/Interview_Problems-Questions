@@ -12,10 +12,21 @@
 //     timer = setTimeout(() => {
 //       fn.apply(context, args);
 //     }, delay);
-
 //   };
 // };
 // const betterFunction = debounceMethod(apiCall, 300);
+
+// New way of writing debounce method
+const debounceFnc = (func, delay) => {
+  let timeOut;
+  return (...args) => {
+    clearTimeout(timeOut);
+    timeOut = setTimeout(() => func(...args), delay);
+  };
+};
+const handleSearchApi = debounceFnc((searchTerm) => {
+  // fetch API method
+}, 300);
 
 // Throttling in Javascript (walmart)
 // let counter = 0;
