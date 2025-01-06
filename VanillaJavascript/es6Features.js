@@ -93,7 +93,7 @@
 //   .catch((err) => console.log(err));
 
 // 10. Enhanced Object Literals
-// They make objet creation more concise and expressive.
+// They make object creation more concise and expressive.
 // They provide several improvements to the way objects are defined, making code easier to read and write.
 // const prop = 'email';
 // const person = {
