@@ -9,10 +9,11 @@ import "./styles.css";
 // button reverse
 // input read only to show result
 
-// hello world
-// olleh dlrow
+// on click of reverse the string should be reversed by word not completely revers the string
+// string = hello world
+// Output = olleh dlrow
 
-// dlrow olleh
+// dlrow olleh - wrong
 
 export default function App() {
   const [state, setState] = useState("");
