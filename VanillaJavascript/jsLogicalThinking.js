@@ -89,3 +89,27 @@
 // ⦁	C: TypeError
 // ⦁	D: ReferenceError
 // ANSWER is = 30 because freeze it freezes all the values and original values doest not change
+
+// let a = [1, 2, 3];
+// let b = a;
+// b[0] = 100;
+// console.log(a);
+// // [100, 2, 3]
+
+// console.log(1 < 2 < 3); // true
+// console.log(3 > 2 > 1); // false
+
+// let x = 10;
+// let y = (x++, x + 1, x * 2);
+// console.log(y); // 22
+// // (10, 11, 20)
+
+// console.log("A");
+// setTimeout(() => console.log("B"), 0);
+// Promise.resolve().then(() => console.log("C"));
+// console.log("D");
+
+// ("A");
+// ("D");
+// ("C");
+// ("B");
